@@ -1,0 +1,245 @@
+log4net: log4net assembly [log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821]. Loaded from [C:\Temp\root\9bf6dbf3\2f844013\assembly\dl3\28e1b333\4f1577b8_040acc01\log4net.DLL]. (.NET Runtime [2.0.50727.4927] on Microsoft Windows NT 6.1.7600.0)
+log4net: DefaultRepositorySelector: defaultRepositoryType [log4net.Repository.Hierarchy.Hierarchy]
+log4net: DefaultRepositorySelector: Creating repository for assembly [QX.Log, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]
+log4net: DefaultRepositorySelector: Assembly [QX.Log, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] Loaded From [C:\Temp\root\9bf6dbf3\2f844013\assembly\dl3\4cd301ed\5c285d9b_cc0acc01\QX.Log.DLL]
+log4net: DefaultRepositorySelector: Assembly [QX.Log, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] does not have a RepositoryAttribute specified.
+log4net: DefaultRepositorySelector: Assembly [QX.Log, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null] using repository [log4net-default-repository] and repository type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: DefaultRepositorySelector: Creating repository [log4net-default-repository] using type [log4net.Repository.Hierarchy.Hierarchy]
+log4net: XmlConfigurator: configuring repository [log4net-default-repository] using .config file section
+log4net: XmlConfigurator: Application config file is [E:\Code\Project\BC_TFS\QX.UI\web.config]
+log4net: XmlConfigurator: Configuring Repository [log4net-default-repository]
+log4net: XmlHierarchyConfigurator: Configuration update mode [Merge].
+log4net: XmlHierarchyConfigurator: Retrieving an instance of log4net.Repository.Logger for logger [App_Op].
+log4net: XmlHierarchyConfigurator: Setting [App_Op] additivity to [True].
+log4net: XmlHierarchyConfigurator: Loading Appender [Appliction_Op] type: [log4net.Appender.AdoNetAppender]
+log4net: XmlHierarchyConfigurator: Setting Property [BufferSize] to Int32 value [0]
+log4net: XmlHierarchyConfigurator: Setting Property [ConnectionType] to String value [System.Data.SqlClient.SqlConnection, System.Data, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+log4net: XmlHierarchyConfigurator: Setting Property [ConnectionString] to String value [Data Source=192.168.1.103;Initial Catalog=LAFA20101112;User ID=sa;Pwd=1234567890]
+log4net: XmlHierarchyConfigurator: Setting Property [CommandText] to String value [INSERT INTO Sys_OpLog ([EL_Date],[EL_Author],[EL_AuthorName],[EL_ClientIP],[EL_RequireURL],[EL_Message],[EL_Module],[EL_ModuleName]) VALUES (@EL_Date, @EL_Author, @EL_AuthorName, @EL_ClientIP, @EL_RequireURL, @EL_Message,@EL_Module,@EL_ModuleName)]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_Date]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [DateTime]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.RawTimeStampLayout]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_Author]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [255]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%property{EL_Author}]
+log4net: PatternParser: Converter [property] Option [EL_Author] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_AuthorName]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [50]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%property{EL_AuthorName}]
+log4net: PatternParser: Converter [property] Option [EL_AuthorName] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_ClientIP]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [255]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%property{EL_ClientIP}]
+log4net: PatternParser: Converter [property] Option [EL_ClientIP] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_RequireURL]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [255]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%property{EL_RequireURL}]
+log4net: PatternParser: Converter [property] Option [EL_RequireURL] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_Message]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [4000]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%message]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_Module]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [4000]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%property{EL_Module}]
+log4net: PatternParser: Converter [property] Option [EL_Module] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_ModuleName]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [4000]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%property{EL_ModuleName}]
+log4net: PatternParser: Converter [property] Option [EL_ModuleName] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net:ERROR [AdoNetAppender] Could not open database connection [Data Source=192.168.1.103;Initial Catalog=LAFA20101112;User ID=sa;Pwd=1234567890]
+System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: 命名管道提供程序, error: 40 - 无法打开到 SQL Server 的连接)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 log4net.Appender.AdoNetAppender.InitializeDatabaseConnection()
+log4net: XmlHierarchyConfigurator: Created Appender [Appliction_Op]
+log4net: XmlHierarchyConfigurator: Adding appender named [Appliction_Op] to logger [App_Op].
+log4net: XmlHierarchyConfigurator: Retrieving an instance of log4net.Repository.Logger for logger [App_Error].
+log4net: XmlHierarchyConfigurator: Setting [App_Error] additivity to [True].
+log4net: XmlHierarchyConfigurator: Loading Appender [Appliction_Error] type: [log4net.Appender.AdoNetAppender]
+log4net: XmlHierarchyConfigurator: Setting Property [BufferSize] to Int32 value [2]
+log4net: XmlHierarchyConfigurator: Setting Property [ConnectionType] to String value [System.Data.SqlClient.SqlConnection, System.Data, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]
+log4net: XmlHierarchyConfigurator: Setting Property [ConnectionString] to String value [Data Source=192.168.1.103;Initial Catalog=LAFA20101112;User ID=sa;Pwd=1234567890]
+log4net: XmlHierarchyConfigurator: Setting Property [CommandText] to String value [INSERT INTO Sys_ErrorLog ([EL_Date],[EL_Author],[EL_AuthorName],[EL_ClientIP],[EL_RequireURL],[EL_Message],[EL_Exception]) VALUES (@EL_Date, @EL_Author, @EL_AuthorName, @EL_ClientIP, @EL_RequireURL, @EL_Message,@EL_Exception)]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_Date]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [DateTime]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.RawTimeStampLayout]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_Author]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [255]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%property{EL_Author}]
+log4net: PatternParser: Converter [property] Option [EL_Author] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_AuthorName]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [50]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%property{EL_AuthorName}]
+log4net: PatternParser: Converter [property] Option [EL_AuthorName] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_ClientIP]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [255]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%property{EL_ClientIP}]
+log4net: PatternParser: Converter [property] Option [EL_ClientIP] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_RequireURL]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [255]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%property{EL_RequireURL}]
+log4net: PatternParser: Converter [property] Option [EL_RequireURL] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_Message]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [4000]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%message]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [ParameterName] to String value [@EL_Exception]
+log4net: XmlHierarchyConfigurator: Setting Property [DbType] to DbType value [String]
+log4net: XmlHierarchyConfigurator: Setting Property [Size] to Int32 value [2000]
+log4net:ERROR XmlHierarchyConfigurator: Cannot find Property [conversionPattern] to set object on [log4net.Layout.ExceptionLayout]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.Layout2RawLayoutAdapter]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddParameter] to object [log4net.Appender.AdoNetAppenderParameter]
+log4net: XmlHierarchyConfigurator: Setting Property [LevelMin] to Level value [DEBUG]
+log4net: XmlHierarchyConfigurator: Setting Property [LevelMax] to Level value [FATAL]
+log4net: XmlHierarchyConfigurator: Setting Collection Property [AddFilter] to object [log4net.Filter.LevelRangeFilter]
+log4net:ERROR [AdoNetAppender] Could not open database connection [Data Source=192.168.1.103;Initial Catalog=LAFA20101112;User ID=sa;Pwd=1234567890]
+System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: 命名管道提供程序, error: 40 - 无法打开到 SQL Server 的连接)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 log4net.Appender.AdoNetAppender.InitializeDatabaseConnection()
+log4net: XmlHierarchyConfigurator: Created Appender [Appliction_Error]
+log4net: XmlHierarchyConfigurator: Adding appender named [Appliction_Error] to logger [App_Error].
+log4net: XmlHierarchyConfigurator: Retrieving an instance of log4net.Repository.Logger for logger [TOFILE].
+log4net: XmlHierarchyConfigurator: Setting [TOFILE] additivity to [True].
+log4net: XmlHierarchyConfigurator: Loading Appender [RollingLogFileAppender] type: [log4net.Appender.RollingFileAppender]
+log4net: XmlHierarchyConfigurator: Setting Property [File] to String value [App_Data\\Log.txt]
+log4net: XmlHierarchyConfigurator: Setting Property [AppendToFile] to Boolean value [True]
+log4net: XmlHierarchyConfigurator: Setting Property [RollingStyle] to RollingMode value [Size]
+log4net: XmlHierarchyConfigurator: Setting Property [MaxSizeRollBackups] to Int32 value [10]
+log4net: XmlHierarchyConfigurator: Setting Property [MaximumFileSize] to String value [10MB]
+log4net: XmlHierarchyConfigurator: Setting Property [StaticLogFileName] to Boolean value [True]
+log4net: PatternParser: Converter [message] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [newline] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [ConversionPattern] to String value [%-5p %d %5rms %-22.22c{1} %-18.18M - %m%n]
+log4net: PatternParser: Converter [p] Option [] Format [min=5,max=2147483647,leftAlign=True]
+log4net: PatternParser: Converter [literal] Option [ ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [d] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [literal] Option [ ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [r] Option [] Format [min=5,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [literal] Option [ms ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [c] Option [1] Format [min=22,max=22,leftAlign=True]
+log4net: PatternParser: Converter [literal] Option [ ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [M] Option [] Format [min=18,max=18,leftAlign=True]
+log4net: PatternParser: Converter [literal] Option [ - ] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [m] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: PatternParser: Converter [n] Option [] Format [min=-1,max=2147483647,leftAlign=False]
+log4net: XmlHierarchyConfigurator: Setting Property [Layout] to object [log4net.Layout.PatternLayout]
+log4net: RollingFileAppender: Searched for existing files in [E:\Code\Project\BC_TFS\QX.UI\App_Data]
+log4net: RollingFileAppender: curSizeRollBackups starts at [0]
+log4net: FileAppender: Opening file for writing [E:\Code\Project\BC_TFS\QX.UI\App_Data\Log.txt] append [True]
+log4net:ERROR [RollingFileAppender] Unable to acquire lock on file E:\Code\Project\BC_TFS\QX.UI\App_Data\Log.txt. 文件“E:\Code\Project\BC_TFS\QX.UI\App_Data\Log.txt”正由另一进程使用，因此该进程无法访问该文件。
+log4net:ERROR [RollingFileAppender] OpenFile(E:\Code\Project\BC_TFS\QX.UI\App_Data\Log.txt,True) call failed.
+log4net.Appender.FileAppender+LockingStream+LockStateException: The file is not currently locked
+   在 log4net.Appender.FileAppender.LockingStream.AssertLocked()
+   在 log4net.Appender.FileAppender.LockingStream.get_CanWrite()
+   在 System.IO.StreamWriter..ctor(Stream stream, Encoding encoding, Int32 bufferSize)
+   在 System.IO.StreamWriter..ctor(Stream stream, Encoding encoding)
+   在 log4net.Appender.FileAppender.OpenFile(String fileName, Boolean append)
+   在 log4net.Appender.RollingFileAppender.OpenFile(String fileName, Boolean append)
+   在 log4net.Appender.FileAppender.SafeOpenFile(String fileName, Boolean append)
+log4net: XmlHierarchyConfigurator: Created Appender [RollingLogFileAppender]
+log4net: XmlHierarchyConfigurator: Adding appender named [RollingLogFileAppender] to logger [TOFILE].
+log4net: XmlHierarchyConfigurator: Hierarchy Threshold []
+log4net: FileAppender: Opening file for writing [E:\Code\Project\BC_TFS\QX.UI\App_Data\Log.txt] append [True]
+log4net:ERROR [RollingFileAppender] Unable to acquire lock on file E:\Code\Project\BC_TFS\QX.UI\App_Data\Log.txt. 文件“E:\Code\Project\BC_TFS\QX.UI\App_Data\Log.txt”正由另一进程使用，因此该进程无法访问该文件。
+log4net:ERROR [RollingFileAppender] OpenFile(E:\Code\Project\BC_TFS\QX.UI\App_Data\Log.txt,True) call failed.
+log4net.Appender.FileAppender+LockingStream+LockStateException: The file is not currently locked
+   在 log4net.Appender.FileAppender.LockingStream.AssertLocked()
+   在 log4net.Appender.FileAppender.LockingStream.get_CanWrite()
+   在 System.IO.StreamWriter..ctor(Stream stream, Encoding encoding, Int32 bufferSize)
+   在 System.IO.StreamWriter..ctor(Stream stream, Encoding encoding)
+   在 log4net.Appender.FileAppender.OpenFile(String fileName, Boolean append)
+   在 log4net.Appender.RollingFileAppender.OpenFile(String fileName, Boolean append)
+   在 log4net.Appender.FileAppender.SafeOpenFile(String fileName, Boolean append)
+log4net:ERROR [RollingFileAppender] No output stream or file set for the appender named [RollingLogFileAppender].
+log4net: FileAppender: Opening file for writing [E:\Code\Project\BC_TFS\QX.UI\App_Data\Log.txt] append [True]
+log4net:ERROR [RollingFileAppender] Unable to acquire lock on file E:\Code\Project\BC_TFS\QX.UI\App_Data\Log.txt. 文件“E:\Code\Project\BC_TFS\QX.UI\App_Data\Log.txt”正由另一进程使用，因此该进程无法访问该文件。
+log4net:ERROR [RollingFileAppender] OpenFile(E:\Code\Project\BC_TFS\QX.UI\App_Data\Log.txt,True) call failed.
+log4net.Appender.FileAppender+LockingStream+LockStateException: The file is not currently locked
+   在 log4net.Appender.FileAppender.LockingStream.AssertLocked()
+   在 log4net.Appender.FileAppender.LockingStream.get_CanWrite()
+   在 System.IO.StreamWriter..ctor(Stream stream, Encoding encoding, Int32 bufferSize)
+   在 System.IO.StreamWriter..ctor(Stream stream, Encoding encoding)
+   在 log4net.Appender.FileAppender.OpenFile(String fileName, Boolean append)
+   在 log4net.Appender.RollingFileAppender.OpenFile(String fileName, Boolean append)
+   在 log4net.Appender.FileAppender.SafeOpenFile(String fileName, Boolean append)
+log4net:ERROR [RollingFileAppender] No output stream or file set for the appender named [RollingLogFileAppender].
+log4net: Hierarchy: Shutdown called on Hierarchy [log4net-default-repository]

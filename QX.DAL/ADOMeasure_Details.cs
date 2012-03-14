@@ -1,0 +1,524 @@
+using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.Collections.Generic;
+using System.Text;
+using QX.Model;
+using QX.DataAcess;
+
+namespace QX.DAL
+{
+   /// <summary>
+   /// 计量信息
+   /// </summary>
+   [Serializable]
+   public partial class ADOMeasure_Details
+   {
+      public IDBOperator idb =  DBOperator.GetInstance();
+      /// <summary>
+      /// 添加计量信息 Measure_Details对象(即:一条记录)
+      /// </summary>
+      public int Add(Measure_Details measure_Details)
+      {
+         string sql = "INSERT INTO Measure_Details (Measure_Code,Measure_LoadometerCode,Measure_ItemName,Measure_Item,Measure_Result,Measure_Remark,Stat,CreateDate,UpdateDate,DeleteDate) VALUES (@Measure_Code,@Measure_LoadometerCode,@Measure_ItemName,@Measure_Item,@Measure_Result,@Measure_Remark,@Stat,@CreateDate,@UpdateDate,@DeleteDate)";
+         if (string.IsNullOrEmpty(measure_Details.Measure_Code))
+         {
+            idb.AddParameter("@Measure_Code", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_Code", measure_Details.Measure_Code);
+         }
+         if (string.IsNullOrEmpty(measure_Details.Measure_LoadometerCode))
+         {
+            idb.AddParameter("@Measure_LoadometerCode", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_LoadometerCode", measure_Details.Measure_LoadometerCode);
+         }
+         if (string.IsNullOrEmpty(measure_Details.Measure_ItemName))
+         {
+            idb.AddParameter("@Measure_ItemName", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_ItemName", measure_Details.Measure_ItemName);
+         }
+         if (string.IsNullOrEmpty(measure_Details.Measure_Item))
+         {
+            idb.AddParameter("@Measure_Item", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_Item", measure_Details.Measure_Item);
+         }
+         if (measure_Details.Measure_Result == 0)
+         {
+            idb.AddParameter("@Measure_Result", 0);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_Result", measure_Details.Measure_Result);
+         }
+         if (string.IsNullOrEmpty(measure_Details.Measure_Remark))
+         {
+            idb.AddParameter("@Measure_Remark", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_Remark", measure_Details.Measure_Remark);
+         }
+         if (measure_Details.Stat == 0)
+         {
+            idb.AddParameter("@Stat", 0);
+         }
+         else
+         {
+            idb.AddParameter("@Stat", measure_Details.Stat);
+         }
+         if (measure_Details.CreateDate == DateTime.MinValue)
+         {
+            idb.AddParameter("@CreateDate", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@CreateDate", measure_Details.CreateDate);
+         }
+         if (measure_Details.UpdateDate == DateTime.MinValue)
+         {
+            idb.AddParameter("@UpdateDate", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@UpdateDate", measure_Details.UpdateDate);
+         }
+         if (measure_Details.DeleteDate == DateTime.MinValue)
+         {
+            idb.AddParameter("@DeleteDate", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@DeleteDate", measure_Details.DeleteDate);
+         }
+
+           
+             int Re = 0;
+             //SQL日志记录
+             var RunMethod = System.Reflection.MethodBase.GetCurrentMethod();
+             System.Collections.Hashtable param = new System.Collections.Hashtable();
+             string Ex = "0";
+             foreach (System.Collections.DictionaryEntry item in idb.GetParameters())
+             {
+                 param.Add(item.Key, item.Value);
+             }
+             try
+             {
+                 Re = idb.ExeCmd(sql);
+                 Ex = Re.ToString();
+             }
+             catch (Exception ex)
+             {
+                 Ex = ex.Message;
+             }
+             
+             SysRunLog.InsertRunSql(sql, param, RunMethod.DeclaringType + "." + RunMethod.Name,Ex);
+
+             return Re;
+         
+      }
+      /// <summary>
+      /// 添加计量信息 Measure_Details对象(即:一条记录)
+      /// </summary>
+      public object AddWithReturn(Measure_Details measure_Details)
+      {
+         string sql = "INSERT INTO Measure_Details (Measure_Code,Measure_LoadometerCode,Measure_ItemName,Measure_Item,Measure_Result,Measure_Remark,Stat,CreateDate,UpdateDate,DeleteDate) VALUES (@Measure_Code,@Measure_LoadometerCode,@Measure_ItemName,@Measure_Item,@Measure_Result,@Measure_Remark,@Stat,@CreateDate,@UpdateDate,@DeleteDate);SELECT @@IDENTITY AS ReturnID;";
+         if (string.IsNullOrEmpty(measure_Details.Measure_Code))
+         {
+            idb.AddParameter("@Measure_Code", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_Code", measure_Details.Measure_Code);
+         }
+         if (string.IsNullOrEmpty(measure_Details.Measure_LoadometerCode))
+         {
+            idb.AddParameter("@Measure_LoadometerCode", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_LoadometerCode", measure_Details.Measure_LoadometerCode);
+         }
+         if (string.IsNullOrEmpty(measure_Details.Measure_ItemName))
+         {
+            idb.AddParameter("@Measure_ItemName", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_ItemName", measure_Details.Measure_ItemName);
+         }
+         if (string.IsNullOrEmpty(measure_Details.Measure_Item))
+         {
+            idb.AddParameter("@Measure_Item", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_Item", measure_Details.Measure_Item);
+         }
+         if (measure_Details.Measure_Result == 0)
+         {
+            idb.AddParameter("@Measure_Result", 0);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_Result", measure_Details.Measure_Result);
+         }
+         if (string.IsNullOrEmpty(measure_Details.Measure_Remark))
+         {
+            idb.AddParameter("@Measure_Remark", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_Remark", measure_Details.Measure_Remark);
+         }
+         if (measure_Details.Stat == 0)
+         {
+            idb.AddParameter("@Stat", 0);
+         }
+         else
+         {
+            idb.AddParameter("@Stat", measure_Details.Stat);
+         }
+         if (measure_Details.CreateDate == DateTime.MinValue)
+         {
+            idb.AddParameter("@CreateDate", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@CreateDate", measure_Details.CreateDate);
+         }
+         if (measure_Details.UpdateDate == DateTime.MinValue)
+         {
+            idb.AddParameter("@UpdateDate", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@UpdateDate", measure_Details.UpdateDate);
+         }
+         if (measure_Details.DeleteDate == DateTime.MinValue)
+         {
+            idb.AddParameter("@DeleteDate", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@DeleteDate", measure_Details.DeleteDate);
+         }
+
+           
+             int Re = 0;
+             //SQL日志记录
+             var RunMethod = System.Reflection.MethodBase.GetCurrentMethod();
+             System.Collections.Hashtable param = new System.Collections.Hashtable();
+             string Ex = "0";
+             foreach (System.Collections.DictionaryEntry item in idb.GetParameters())
+             {
+                 param.Add(item.Key, item.Value);
+             }
+             try
+             {
+                 var Return = idb.ReturnValue(sql);
+                 Ex = Return.ToString();
+             }
+             catch (Exception ex)
+             {
+                 Ex = ex.Message;
+             }
+             
+             SysRunLog.InsertRunSql(sql, param, RunMethod.DeclaringType + "." + RunMethod.Name,Ex);
+
+             return Re;
+      }
+      /// <summary>
+      /// 更新计量信息 Measure_Details对象(即:一条记录
+      /// </summary>
+      public int Update(Measure_Details measure_Details)
+      {
+         
+         StringBuilder sbParameter=new StringBuilder();
+      StringBuilder sb=new StringBuilder();
+      sb.Append(@"UPDATE       Measure_Details       SET ");
+            if(measure_Details.Measure_Code_IsChanged){sbParameter.Append("Measure_Code=@Measure_Code, ");}
+      if(measure_Details.Measure_LoadometerCode_IsChanged){sbParameter.Append("Measure_LoadometerCode=@Measure_LoadometerCode, ");}
+      if(measure_Details.Measure_ItemName_IsChanged){sbParameter.Append("Measure_ItemName=@Measure_ItemName, ");}
+      if(measure_Details.Measure_Item_IsChanged){sbParameter.Append("Measure_Item=@Measure_Item, ");}
+      if(measure_Details.Measure_Result_IsChanged){sbParameter.Append("Measure_Result=@Measure_Result, ");}
+      if(measure_Details.Measure_Remark_IsChanged){sbParameter.Append("Measure_Remark=@Measure_Remark, ");}
+      if(measure_Details.Stat_IsChanged){sbParameter.Append("Stat=@Stat, ");}
+      if(measure_Details.CreateDate_IsChanged){sbParameter.Append("CreateDate=@CreateDate, ");}
+      if(measure_Details.UpdateDate_IsChanged){sbParameter.Append("UpdateDate=@UpdateDate, ");}
+      if(measure_Details.DeleteDate_IsChanged){sbParameter.Append("DeleteDate=@DeleteDate ");}          sb.Append(sbParameter.ToString().Trim().TrimEnd(',')); 
+      sb.Append(      " WHERE 1=1 AND ((Stat is null) or (Stat=0))   and Measure_ID=@Measure_ID; " );
+      string sql=sb.ToString();
+         if(measure_Details.Measure_Code_IsChanged)
+         {
+         if (string.IsNullOrEmpty(measure_Details.Measure_Code))
+         {
+            idb.AddParameter("@Measure_Code", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_Code", measure_Details.Measure_Code);
+         }
+          }
+         if(measure_Details.Measure_LoadometerCode_IsChanged)
+         {
+         if (string.IsNullOrEmpty(measure_Details.Measure_LoadometerCode))
+         {
+            idb.AddParameter("@Measure_LoadometerCode", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_LoadometerCode", measure_Details.Measure_LoadometerCode);
+         }
+          }
+         if(measure_Details.Measure_ItemName_IsChanged)
+         {
+         if (string.IsNullOrEmpty(measure_Details.Measure_ItemName))
+         {
+            idb.AddParameter("@Measure_ItemName", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_ItemName", measure_Details.Measure_ItemName);
+         }
+          }
+         if(measure_Details.Measure_Item_IsChanged)
+         {
+         if (string.IsNullOrEmpty(measure_Details.Measure_Item))
+         {
+            idb.AddParameter("@Measure_Item", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_Item", measure_Details.Measure_Item);
+         }
+          }
+         if(measure_Details.Measure_Result_IsChanged)
+         {
+         if (measure_Details.Measure_Result == 0)
+         {
+            idb.AddParameter("@Measure_Result", 0);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_Result", measure_Details.Measure_Result);
+         }
+          }
+         if(measure_Details.Measure_Remark_IsChanged)
+         {
+         if (string.IsNullOrEmpty(measure_Details.Measure_Remark))
+         {
+            idb.AddParameter("@Measure_Remark", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@Measure_Remark", measure_Details.Measure_Remark);
+         }
+          }
+         if(measure_Details.Stat_IsChanged)
+         {
+         if (measure_Details.Stat == 0)
+         {
+            idb.AddParameter("@Stat", 0);
+         }
+         else
+         {
+            idb.AddParameter("@Stat", measure_Details.Stat);
+         }
+          }
+         if(measure_Details.CreateDate_IsChanged)
+         {
+         if (measure_Details.CreateDate == DateTime.MinValue)
+         {
+            idb.AddParameter("@CreateDate", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@CreateDate", measure_Details.CreateDate);
+         }
+          }
+         if(measure_Details.UpdateDate_IsChanged)
+         {
+         if (measure_Details.UpdateDate == DateTime.MinValue)
+         {
+            idb.AddParameter("@UpdateDate", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@UpdateDate", measure_Details.UpdateDate);
+         }
+          }
+         if(measure_Details.DeleteDate_IsChanged)
+         {
+         if (measure_Details.DeleteDate == DateTime.MinValue)
+         {
+            idb.AddParameter("@DeleteDate", DBNull.Value);
+         }
+         else
+         {
+            idb.AddParameter("@DeleteDate", measure_Details.DeleteDate);
+         }
+          }
+
+         idb.AddParameter("@Measure_ID", measure_Details.Measure_ID);
+
+           
+             int Re = 0;
+             //SQL日志记录
+             var RunMethod = System.Reflection.MethodBase.GetCurrentMethod();
+             System.Collections.Hashtable param = new System.Collections.Hashtable();
+             string Ex = "0";
+             foreach (System.Collections.DictionaryEntry item in idb.GetParameters())
+             {
+                 param.Add(item.Key, item.Value);
+             }
+             try
+             {
+                 Re = idb.ExeCmd(sql);
+                 Ex = Re.ToString();
+             }
+             catch (Exception ex)
+             {
+                 Ex = ex.Message;
+             }
+             
+             SysRunLog.InsertRunSql(sql, param, RunMethod.DeclaringType + "." + RunMethod.Name,Ex);
+
+             return Re;
+      }
+      /// <summary>
+      /// 删除计量信息 Measure_Details对象(即:一条记录
+      /// </summary>
+      public int Delete(decimal measure_ID)
+      {
+         string sql = "DELETE Measure_Details WHERE 1=1  AND Measure_ID=@Measure_ID ";
+         idb.AddParameter("@Measure_ID", measure_ID);
+
+           
+             int Re = 0;
+             //SQL日志记录
+             var RunMethod = System.Reflection.MethodBase.GetCurrentMethod();
+             System.Collections.Hashtable param = new System.Collections.Hashtable();
+             string Ex = "0";
+             foreach (System.Collections.DictionaryEntry item in idb.GetParameters())
+             {
+                 param.Add(item.Key, item.Value);
+             }
+             try
+             {
+                 Re = idb.ExeCmd(sql);
+                 Ex = Re.ToString();
+             }
+             catch (Exception ex)
+             {
+                 Ex = ex.Message;
+             }
+             
+             SysRunLog.InsertRunSql(sql, param, RunMethod.DeclaringType + "." + RunMethod.Name,Ex);
+
+             return Re;
+      }
+      /// <summary>
+      /// 获取指定的计量信息 Measure_Details对象(即:一条记录
+      /// </summary>
+      public Measure_Details GetByKey(decimal measure_ID)
+      {
+         Measure_Details measure_Details = new Measure_Details();
+         string sql = "SELECT  Measure_ID,Measure_Code,Measure_LoadometerCode,Measure_ItemName,Measure_Item,Measure_Result,Measure_Remark,Stat,CreateDate,UpdateDate,DeleteDate FROM Measure_Details WHERE 1=1 AND ((Stat is null) or (Stat=0) )  AND Measure_ID=@Measure_ID ";
+         idb.AddParameter("@Measure_ID", measure_ID);
+
+          SqlDataReader dr=null;  
+           try {  
+          dr=(SqlDataReader)idb.ReturnReader(sql);
+         while(dr.Read())
+         {
+            if (dr["Measure_ID"] != DBNull.Value) measure_Details.Measure_ID = Convert.ToDecimal(dr["Measure_ID"]);
+            if (dr["Measure_Code"] != DBNull.Value) measure_Details.Measure_Code = Convert.ToString(dr["Measure_Code"]);
+            if (dr["Measure_LoadometerCode"] != DBNull.Value) measure_Details.Measure_LoadometerCode = Convert.ToString(dr["Measure_LoadometerCode"]);
+            if (dr["Measure_ItemName"] != DBNull.Value) measure_Details.Measure_ItemName = Convert.ToString(dr["Measure_ItemName"]);
+            if (dr["Measure_Item"] != DBNull.Value) measure_Details.Measure_Item = Convert.ToString(dr["Measure_Item"]);
+            if (dr["Measure_Result"] != DBNull.Value) measure_Details.Measure_Result = Convert.ToSingle(dr["Measure_Result"]);
+            if (dr["Measure_Remark"] != DBNull.Value) measure_Details.Measure_Remark = Convert.ToString(dr["Measure_Remark"]);
+            if (dr["Stat"] != DBNull.Value) measure_Details.Stat = Convert.ToInt32(dr["Stat"]);
+            if (dr["CreateDate"] != DBNull.Value) measure_Details.CreateDate = Convert.ToDateTime(dr["CreateDate"]);
+            if (dr["UpdateDate"] != DBNull.Value) measure_Details.UpdateDate = Convert.ToDateTime(dr["UpdateDate"]);
+            if (dr["DeleteDate"] != DBNull.Value) measure_Details.DeleteDate = Convert.ToDateTime(dr["DeleteDate"]);
+         }
+          }catch (System.Exception ex){ throw ex; }  finally { if (dr != null) { dr.Close(); } if (idb.GetConnection() != null && idb.GetConnection().State == ConnectionState.Open) { idb.GetConnection().Close(); }   }  
+         return measure_Details;
+      }
+      /// <summary>
+      /// 获取指定的计量信息 Measure_Details对象集合
+      /// </summary>
+      public List<Measure_Details> GetListByWhere(string strCondition)
+      {
+         List<Measure_Details> ret = new List<Measure_Details>();
+         string sql = "SELECT  Measure_ID,Measure_Code,Measure_LoadometerCode,Measure_ItemName,Measure_Item,Measure_Result,Measure_Remark,Stat,CreateDate,UpdateDate,DeleteDate FROM Measure_Details WHERE 1=1 AND ((Stat is null) or (Stat=0) ) ";
+         if(!string.IsNullOrEmpty(strCondition))
+         {
+            strCondition.Replace('\'','"'); //防sql注入
+            sql += strCondition ;
+         }
+          SqlDataReader dr=null;  
+           try {  
+          dr=(SqlDataReader)idb.ReturnReader(sql);
+         while(dr.Read())
+         {
+            Measure_Details measure_Details = new Measure_Details();
+            if (dr["Measure_ID"] != DBNull.Value) measure_Details.Measure_ID = Convert.ToDecimal(dr["Measure_ID"]);
+            if (dr["Measure_Code"] != DBNull.Value) measure_Details.Measure_Code = Convert.ToString(dr["Measure_Code"]);
+            if (dr["Measure_LoadometerCode"] != DBNull.Value) measure_Details.Measure_LoadometerCode = Convert.ToString(dr["Measure_LoadometerCode"]);
+            if (dr["Measure_ItemName"] != DBNull.Value) measure_Details.Measure_ItemName = Convert.ToString(dr["Measure_ItemName"]);
+            if (dr["Measure_Item"] != DBNull.Value) measure_Details.Measure_Item = Convert.ToString(dr["Measure_Item"]);
+            if (dr["Measure_Result"] != DBNull.Value) measure_Details.Measure_Result = Convert.ToSingle(dr["Measure_Result"]);
+            if (dr["Measure_Remark"] != DBNull.Value) measure_Details.Measure_Remark = Convert.ToString(dr["Measure_Remark"]);
+            if (dr["Stat"] != DBNull.Value) measure_Details.Stat = Convert.ToInt32(dr["Stat"]);
+            if (dr["CreateDate"] != DBNull.Value) measure_Details.CreateDate = Convert.ToDateTime(dr["CreateDate"]);
+            if (dr["UpdateDate"] != DBNull.Value) measure_Details.UpdateDate = Convert.ToDateTime(dr["UpdateDate"]);
+            if (dr["DeleteDate"] != DBNull.Value) measure_Details.DeleteDate = Convert.ToDateTime(dr["DeleteDate"]);
+            ret.Add(measure_Details);
+         }
+          }catch (System.Exception ex){ throw ex; }  finally { if (dr != null) { dr.Close(); } if (idb.GetConnection() != null && idb.GetConnection().State == ConnectionState.Open) { idb.GetConnection().Close(); }   }  
+         return ret;
+      }
+      /// <summary>
+      /// 获取所有的计量信息 Measure_Details对象(即:一条记录
+      /// </summary>
+      public List<Measure_Details> GetAll()
+      {
+         List<Measure_Details> ret = new List<Measure_Details>();
+         string sql = "SELECT  Measure_ID,Measure_Code,Measure_LoadometerCode,Measure_ItemName,Measure_Item,Measure_Result,Measure_Remark,Stat,CreateDate,UpdateDate,DeleteDate FROM Measure_Details where 1=1 AND ((Stat is null) or (Stat=0) ) order by Measure_ID desc ";
+          SqlDataReader dr=null;  
+           try {  
+          dr=(SqlDataReader)idb.ReturnReader(sql);
+         while(dr.Read())
+         {
+            Measure_Details measure_Details = new Measure_Details();
+            if (dr["Measure_ID"] != DBNull.Value) measure_Details.Measure_ID = Convert.ToDecimal(dr["Measure_ID"]);
+            if (dr["Measure_Code"] != DBNull.Value) measure_Details.Measure_Code = Convert.ToString(dr["Measure_Code"]);
+            if (dr["Measure_LoadometerCode"] != DBNull.Value) measure_Details.Measure_LoadometerCode = Convert.ToString(dr["Measure_LoadometerCode"]);
+            if (dr["Measure_ItemName"] != DBNull.Value) measure_Details.Measure_ItemName = Convert.ToString(dr["Measure_ItemName"]);
+            if (dr["Measure_Item"] != DBNull.Value) measure_Details.Measure_Item = Convert.ToString(dr["Measure_Item"]);
+            if (dr["Measure_Result"] != DBNull.Value) measure_Details.Measure_Result = Convert.ToSingle(dr["Measure_Result"]);
+            if (dr["Measure_Remark"] != DBNull.Value) measure_Details.Measure_Remark = Convert.ToString(dr["Measure_Remark"]);
+            if (dr["Stat"] != DBNull.Value) measure_Details.Stat = Convert.ToInt32(dr["Stat"]);
+            if (dr["CreateDate"] != DBNull.Value) measure_Details.CreateDate = Convert.ToDateTime(dr["CreateDate"]);
+            if (dr["UpdateDate"] != DBNull.Value) measure_Details.UpdateDate = Convert.ToDateTime(dr["UpdateDate"]);
+            if (dr["DeleteDate"] != DBNull.Value) measure_Details.DeleteDate = Convert.ToDateTime(dr["DeleteDate"]);
+            ret.Add(measure_Details);
+         }
+          }catch (System.Exception ex){ throw ex; }  finally {  if (dr != null) { dr.Close(); } if (idb.GetConnection() != null && idb.GetConnection().State == ConnectionState.Open) { idb.GetConnection().Close(); }   } 
+         return ret;
+      }
+   }
+}

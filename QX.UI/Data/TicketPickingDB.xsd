@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TicketPickingDB" targetNamespace="http://tempuri.org/TicketPickingDB.xsd" xmlns:mstns="http://tempuri.org/TicketPickingDB.xsd" xmlns="http://tempuri.org/TicketPickingDB.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LAFA20101112ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LAFA20101112ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LAFA20101112ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VRpt_IOItemTableAdapter" GeneratorDataComponentClassName="VRpt_IOItemTableAdapter" Name="VRpt_IOItem" UserDataComponentName="VRpt_IOItemTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LAFA20101112ConnectionString (Web.config)" DbObjectName="LAFA20101112.dbo.VRpt_IOItem" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT WHIOM_Department, WHIOM_Owner, WHIOM_BOwner, WHIOM_RDate, WHIOI_MainCode, WHIOI_MCode, WHIOI_MName, WHIOI_MSpec, WHIOI_MUnit, WHIOI_MNum, WHIOI_MPrice, WHIOI_Sum, WHIOI_RefWNoName, WHIOI_UOwner FROM dbo.VRpt_IOItem</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="WHIOM_Department" DataSetColumn="WHIOM_Department" />
+              <Mapping SourceColumn="WHIOM_Owner" DataSetColumn="WHIOM_Owner" />
+              <Mapping SourceColumn="WHIOM_BOwner" DataSetColumn="WHIOM_BOwner" />
+              <Mapping SourceColumn="WHIOM_RDate" DataSetColumn="WHIOM_RDate" />
+              <Mapping SourceColumn="WHIOI_MainCode" DataSetColumn="WHIOI_MainCode" />
+              <Mapping SourceColumn="WHIOI_MCode" DataSetColumn="WHIOI_MCode" />
+              <Mapping SourceColumn="WHIOI_MName" DataSetColumn="WHIOI_MName" />
+              <Mapping SourceColumn="WHIOI_MSpec" DataSetColumn="WHIOI_MSpec" />
+              <Mapping SourceColumn="WHIOI_MUnit" DataSetColumn="WHIOI_MUnit" />
+              <Mapping SourceColumn="WHIOI_MNum" DataSetColumn="WHIOI_MNum" />
+              <Mapping SourceColumn="WHIOI_MPrice" DataSetColumn="WHIOI_MPrice" />
+              <Mapping SourceColumn="WHIOI_Sum" DataSetColumn="WHIOI_Sum" />
+              <Mapping SourceColumn="WHIOI_RefWNoName" DataSetColumn="WHIOI_RefWNoName" />
+              <Mapping SourceColumn="WHIOI_UOwner" DataSetColumn="WHIOI_UOwner" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TicketPickingDB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TicketPickingDB" msprop:Generator_DataSetName="TicketPickingDB" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VRpt_IOItem" msprop:Generator_UserTableName="VRpt_IOItem" msprop:Generator_RowDeletedName="VRpt_IOItemRowDeleted" msprop:Generator_TableClassName="VRpt_IOItemDataTable" msprop:Generator_RowChangedName="VRpt_IOItemRowChanged" msprop:Generator_RowClassName="VRpt_IOItemRow" msprop:Generator_RowChangingName="VRpt_IOItemRowChanging" msprop:Generator_RowEvArgName="VRpt_IOItemRowChangeEvent" msprop:Generator_RowEvHandlerName="VRpt_IOItemRowChangeEventHandler" msprop:Generator_TablePropName="VRpt_IOItem" msprop:Generator_TableVarName="tableVRpt_IOItem" msprop:Generator_RowDeletingName="VRpt_IOItemRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WHIOM_Department" msprop:Generator_UserColumnName="WHIOM_Department" msprop:Generator_ColumnPropNameInRow="WHIOM_Department" msprop:Generator_ColumnVarNameInTable="columnWHIOM_Department" msprop:Generator_ColumnPropNameInTable="WHIOM_DepartmentColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHIOM_Owner" msprop:Generator_UserColumnName="WHIOM_Owner" msprop:Generator_ColumnPropNameInRow="WHIOM_Owner" msprop:Generator_ColumnVarNameInTable="columnWHIOM_Owner" msprop:Generator_ColumnPropNameInTable="WHIOM_OwnerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHIOM_BOwner" msprop:Generator_UserColumnName="WHIOM_BOwner" msprop:Generator_ColumnPropNameInRow="WHIOM_BOwner" msprop:Generator_ColumnVarNameInTable="columnWHIOM_BOwner" msprop:Generator_ColumnPropNameInTable="WHIOM_BOwnerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHIOM_RDate" msprop:Generator_UserColumnName="WHIOM_RDate" msprop:Generator_ColumnPropNameInRow="WHIOM_RDate" msprop:Generator_ColumnVarNameInTable="columnWHIOM_RDate" msprop:Generator_ColumnPropNameInTable="WHIOM_RDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="WHIOI_MainCode" msprop:Generator_UserColumnName="WHIOI_MainCode" msprop:Generator_ColumnPropNameInRow="WHIOI_MainCode" msprop:Generator_ColumnVarNameInTable="columnWHIOI_MainCode" msprop:Generator_ColumnPropNameInTable="WHIOI_MainCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHIOI_MCode" msprop:Generator_UserColumnName="WHIOI_MCode" msprop:Generator_ColumnPropNameInRow="WHIOI_MCode" msprop:Generator_ColumnVarNameInTable="columnWHIOI_MCode" msprop:Generator_ColumnPropNameInTable="WHIOI_MCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHIOI_MName" msprop:Generator_UserColumnName="WHIOI_MName" msprop:Generator_ColumnPropNameInRow="WHIOI_MName" msprop:Generator_ColumnVarNameInTable="columnWHIOI_MName" msprop:Generator_ColumnPropNameInTable="WHIOI_MNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHIOI_MSpec" msprop:Generator_UserColumnName="WHIOI_MSpec" msprop:Generator_ColumnPropNameInRow="WHIOI_MSpec" msprop:Generator_ColumnVarNameInTable="columnWHIOI_MSpec" msprop:Generator_ColumnPropNameInTable="WHIOI_MSpecColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHIOI_MUnit" msprop:Generator_UserColumnName="WHIOI_MUnit" msprop:Generator_ColumnPropNameInRow="WHIOI_MUnit" msprop:Generator_ColumnVarNameInTable="columnWHIOI_MUnit" msprop:Generator_ColumnPropNameInTable="WHIOI_MUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHIOI_MNum" msprop:Generator_UserColumnName="WHIOI_MNum" msprop:Generator_ColumnPropNameInRow="WHIOI_MNum" msprop:Generator_ColumnVarNameInTable="columnWHIOI_MNum" msprop:Generator_ColumnPropNameInTable="WHIOI_MNumColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WHIOI_MPrice" msprop:Generator_UserColumnName="WHIOI_MPrice" msprop:Generator_ColumnPropNameInRow="WHIOI_MPrice" msprop:Generator_ColumnVarNameInTable="columnWHIOI_MPrice" msprop:Generator_ColumnPropNameInTable="WHIOI_MPriceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WHIOI_Sum" msdata:ReadOnly="true" msprop:Generator_UserColumnName="WHIOI_Sum" msprop:Generator_ColumnPropNameInRow="WHIOI_Sum" msprop:Generator_ColumnVarNameInTable="columnWHIOI_Sum" msprop:Generator_ColumnPropNameInTable="WHIOI_SumColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WHIOI_RefWNoName" msprop:Generator_UserColumnName="WHIOI_RefWNoName" msprop:Generator_ColumnPropNameInRow="WHIOI_RefWNoName" msprop:Generator_ColumnVarNameInTable="columnWHIOI_RefWNoName" msprop:Generator_ColumnPropNameInTable="WHIOI_RefWNoNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHIOI_UOwner" msprop:Generator_UserColumnName="WHIOI_UOwner" msprop:Generator_ColumnPropNameInRow="WHIOI_UOwner" msprop:Generator_ColumnVarNameInTable="columnWHIOI_UOwner" msprop:Generator_ColumnPropNameInTable="WHIOI_UOwnerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

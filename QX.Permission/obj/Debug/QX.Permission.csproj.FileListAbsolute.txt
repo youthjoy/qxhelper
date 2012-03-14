@@ -1,0 +1,6 @@
+F:\code\Helper\QX.Permission\obj\Debug\ResolveAssemblyReference.cache
+F:\code\Helper\QX.Permission\bin\Debug\QX.Permission.dll
+F:\code\Helper\QX.Permission\bin\Debug\QX.Permission.pdb
+F:\code\Helper\QX.Permission\bin\Debug\QX.DataAcess.dll
+F:\code\Helper\QX.Permission\obj\Debug\QX.Permission.dll
+F:\code\Helper\QX.Permission\obj\Debug\QX.Permission.pdb

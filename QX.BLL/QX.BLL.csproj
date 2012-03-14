@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C9C96B92-850E-4188-9206-282C63BEDFDB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QX.BLL</RootNamespace>
+    <AssemblyName>QX.BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\QX.UI\Dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QX.DataAcess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\QX.UI\Dll\QX.DataAcess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QX.Comm\QX.Comm.csproj">
+      <Project>{FCB48BE6-4E65-48FE-BFB1-C27E5528D311}</Project>
+      <Name>QX.Comm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QX.Config\QX.Config.csproj">
+      <Project>{9B85B99A-7A14-46FF-9C58-DB2CD1A3D618}</Project>
+      <Name>QX.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QX.DAL\QX.DAL.csproj">
+      <Project>{3C48CD74-EDC7-4945-8624-53CE5222B422}</Project>
+      <Name>QX.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QX.ERP.Dal\QX.ERP.Dal.csproj">
+      <Project>{4A897BAE-5565-4131-ABB2-12CAA6AC8150}</Project>
+      <Name>QX.ERP.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QX.Log\QX.Log.csproj">
+      <Project>{1C128DB1-7EFC-4BE0-B981-7F98CB171C42}</Project>
+      <Name>QX.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QX.Model\QX.Model.csproj">
+      <Project>{AF56D9AE-6251-4C2F-9397-DB011BC274CB}</Project>
+      <Name>QX.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\Bll_Bse_Dict.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Bll_HR_Department.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Bll_HR_Stuff.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base\Bll_Sys_Config_Field_Refer.cs" />
+    <Compile Include="Base\Bll_Sys_Config_Fieled.cs" />
+    <Compile Include="Base\Bll_Sys_Config_ListPage.cs" />
+    <Compile Include="Base\Bll_Sys_Config_Refer.cs" />
+    <Compile Include="Base\Bll_Sys_DictModule.cs" />
+    <Compile Include="Base\Bll_Sys_Map.cs" />
+    <Compile Include="Base\Bll_Sys_PD_Filed.cs" />
+    <Compile Include="Base\Bll_Sys_PD_GridFormat.cs" />
+    <Compile Include="Base\Bll_Sys_PD_Module.cs" />
+    <Compile Include="Base\Bll_Sys_PD_RefModule.cs" />
+    <Compile Include="Base\Bll_Sys_PU_Config.cs" />
+    <Compile Include="Base\Bll_System_Menu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bll_SystemMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bll_Sys_Config_ListPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bll_Sys_Config_Refer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bll_Sys_DesktopConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bll_Sys_LoginLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Comm\Bll_Comm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Comm\Bll_System_Menu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Comm\Bll_System_TopMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ERP\Bll_DeptEmployee_Relation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ERP\Bll_HR_Department.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ERP\Bll_HR_Stuff.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ERP\Bll_RoadComponents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="New\Bll_Comp.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

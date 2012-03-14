@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StockCheckNew" targetNamespace="http://tempuri.org/StockCheckNew.xsd" xmlns:mstns="http://tempuri.org/StockCheckNew.xsd" xmlns="http://tempuri.org/StockCheckNew.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LAFA20101112ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LAFA20101112ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LAFA20101112ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VRpt_StockCheckNewTableAdapter" GeneratorDataComponentClassName="VRpt_StockCheckNewTableAdapter" Name="VRpt_StockCheckNew" UserDataComponentName="VRpt_StockCheckNewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LAFA20101112ConnectionString (Web.config)" DbObjectName="LAFA20101112.dbo.VRpt_StockCheckNew" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT WHBI_Code, WHBI_BCode, WHBI_WCode, WHBI_WName, WHBI_WNo, WHBI_WNoName, WHBI_MCode, WHBI_MName, WHBI_MSpec, WHBI_MUnit, WHBI_RNum, WHBI_BNum, WHBI_MNum, WHBI_LNum, WHBI_Type, WHBI_RType, WHBI_Date, WHBI_Owner, WHBI_Bak, WHBM_WName, WHBM_WCode, WHBM_Company, WHBM_CompanyCode FROM dbo.VRpt_StockCheckNew</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="WHBI_Code" DataSetColumn="WHBI_Code" />
+              <Mapping SourceColumn="WHBI_BCode" DataSetColumn="WHBI_BCode" />
+              <Mapping SourceColumn="WHBI_WCode" DataSetColumn="WHBI_WCode" />
+              <Mapping SourceColumn="WHBI_WName" DataSetColumn="WHBI_WName" />
+              <Mapping SourceColumn="WHBI_WNo" DataSetColumn="WHBI_WNo" />
+              <Mapping SourceColumn="WHBI_WNoName" DataSetColumn="WHBI_WNoName" />
+              <Mapping SourceColumn="WHBI_MCode" DataSetColumn="WHBI_MCode" />
+              <Mapping SourceColumn="WHBI_MName" DataSetColumn="WHBI_MName" />
+              <Mapping SourceColumn="WHBI_MSpec" DataSetColumn="WHBI_MSpec" />
+              <Mapping SourceColumn="WHBI_MUnit" DataSetColumn="WHBI_MUnit" />
+              <Mapping SourceColumn="WHBI_RNum" DataSetColumn="WHBI_RNum" />
+              <Mapping SourceColumn="WHBI_BNum" DataSetColumn="WHBI_BNum" />
+              <Mapping SourceColumn="WHBI_MNum" DataSetColumn="WHBI_MNum" />
+              <Mapping SourceColumn="WHBI_LNum" DataSetColumn="WHBI_LNum" />
+              <Mapping SourceColumn="WHBI_Type" DataSetColumn="WHBI_Type" />
+              <Mapping SourceColumn="WHBI_RType" DataSetColumn="WHBI_RType" />
+              <Mapping SourceColumn="WHBI_Date" DataSetColumn="WHBI_Date" />
+              <Mapping SourceColumn="WHBI_Owner" DataSetColumn="WHBI_Owner" />
+              <Mapping SourceColumn="WHBI_Bak" DataSetColumn="WHBI_Bak" />
+              <Mapping SourceColumn="WHBM_WName" DataSetColumn="WHBM_WName" />
+              <Mapping SourceColumn="WHBM_WCode" DataSetColumn="WHBM_WCode" />
+              <Mapping SourceColumn="WHBM_Company" DataSetColumn="WHBM_Company" />
+              <Mapping SourceColumn="WHBM_CompanyCode" DataSetColumn="WHBM_CompanyCode" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StockCheckNew" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="StockCheckNew" msprop:Generator_DataSetName="StockCheckNew" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VRpt_StockCheckNew" msprop:Generator_UserTableName="VRpt_StockCheckNew" msprop:Generator_RowDeletedName="VRpt_StockCheckNewRowDeleted" msprop:Generator_TableClassName="VRpt_StockCheckNewDataTable" msprop:Generator_RowChangedName="VRpt_StockCheckNewRowChanged" msprop:Generator_RowClassName="VRpt_StockCheckNewRow" msprop:Generator_RowChangingName="VRpt_StockCheckNewRowChanging" msprop:Generator_RowEvArgName="VRpt_StockCheckNewRowChangeEvent" msprop:Generator_RowEvHandlerName="VRpt_StockCheckNewRowChangeEventHandler" msprop:Generator_TablePropName="VRpt_StockCheckNew" msprop:Generator_TableVarName="tableVRpt_StockCheckNew" msprop:Generator_RowDeletingName="VRpt_StockCheckNewRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WHBI_Code" msprop:Generator_UserColumnName="WHBI_Code" msprop:Generator_ColumnPropNameInRow="WHBI_Code" msprop:Generator_ColumnVarNameInTable="columnWHBI_Code" msprop:Generator_ColumnPropNameInTable="WHBI_CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_BCode" msprop:Generator_UserColumnName="WHBI_BCode" msprop:Generator_ColumnPropNameInRow="WHBI_BCode" msprop:Generator_ColumnVarNameInTable="columnWHBI_BCode" msprop:Generator_ColumnPropNameInTable="WHBI_BCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_WCode" msprop:Generator_UserColumnName="WHBI_WCode" msprop:Generator_ColumnPropNameInRow="WHBI_WCode" msprop:Generator_ColumnVarNameInTable="columnWHBI_WCode" msprop:Generator_ColumnPropNameInTable="WHBI_WCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_WName" msprop:Generator_UserColumnName="WHBI_WName" msprop:Generator_ColumnPropNameInRow="WHBI_WName" msprop:Generator_ColumnVarNameInTable="columnWHBI_WName" msprop:Generator_ColumnPropNameInTable="WHBI_WNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_WNo" msprop:Generator_UserColumnName="WHBI_WNo" msprop:Generator_ColumnPropNameInRow="WHBI_WNo" msprop:Generator_ColumnVarNameInTable="columnWHBI_WNo" msprop:Generator_ColumnPropNameInTable="WHBI_WNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_WNoName" msprop:Generator_UserColumnName="WHBI_WNoName" msprop:Generator_ColumnPropNameInRow="WHBI_WNoName" msprop:Generator_ColumnVarNameInTable="columnWHBI_WNoName" msprop:Generator_ColumnPropNameInTable="WHBI_WNoNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_MCode" msprop:Generator_UserColumnName="WHBI_MCode" msprop:Generator_ColumnPropNameInRow="WHBI_MCode" msprop:Generator_ColumnVarNameInTable="columnWHBI_MCode" msprop:Generator_ColumnPropNameInTable="WHBI_MCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_MName" msprop:Generator_UserColumnName="WHBI_MName" msprop:Generator_ColumnPropNameInRow="WHBI_MName" msprop:Generator_ColumnVarNameInTable="columnWHBI_MName" msprop:Generator_ColumnPropNameInTable="WHBI_MNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_MSpec" msprop:Generator_UserColumnName="WHBI_MSpec" msprop:Generator_ColumnPropNameInRow="WHBI_MSpec" msprop:Generator_ColumnVarNameInTable="columnWHBI_MSpec" msprop:Generator_ColumnPropNameInTable="WHBI_MSpecColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_MUnit" msprop:Generator_UserColumnName="WHBI_MUnit" msprop:Generator_ColumnPropNameInRow="WHBI_MUnit" msprop:Generator_ColumnVarNameInTable="columnWHBI_MUnit" msprop:Generator_ColumnPropNameInTable="WHBI_MUnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_RNum" msprop:Generator_UserColumnName="WHBI_RNum" msprop:Generator_ColumnPropNameInRow="WHBI_RNum" msprop:Generator_ColumnVarNameInTable="columnWHBI_RNum" msprop:Generator_ColumnPropNameInTable="WHBI_RNumColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WHBI_BNum" msprop:Generator_UserColumnName="WHBI_BNum" msprop:Generator_ColumnPropNameInRow="WHBI_BNum" msprop:Generator_ColumnVarNameInTable="columnWHBI_BNum" msprop:Generator_ColumnPropNameInTable="WHBI_BNumColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WHBI_MNum" msprop:Generator_UserColumnName="WHBI_MNum" msprop:Generator_ColumnPropNameInRow="WHBI_MNum" msprop:Generator_ColumnVarNameInTable="columnWHBI_MNum" msprop:Generator_ColumnPropNameInTable="WHBI_MNumColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WHBI_LNum" msprop:Generator_UserColumnName="WHBI_LNum" msprop:Generator_ColumnPropNameInRow="WHBI_LNum" msprop:Generator_ColumnVarNameInTable="columnWHBI_LNum" msprop:Generator_ColumnPropNameInTable="WHBI_LNumColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WHBI_Type" msprop:Generator_UserColumnName="WHBI_Type" msprop:Generator_ColumnPropNameInRow="WHBI_Type" msprop:Generator_ColumnVarNameInTable="columnWHBI_Type" msprop:Generator_ColumnPropNameInTable="WHBI_TypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_RType" msprop:Generator_UserColumnName="WHBI_RType" msprop:Generator_ColumnPropNameInRow="WHBI_RType" msprop:Generator_ColumnVarNameInTable="columnWHBI_RType" msprop:Generator_ColumnPropNameInTable="WHBI_RTypeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_Date" msprop:Generator_UserColumnName="WHBI_Date" msprop:Generator_ColumnPropNameInRow="WHBI_Date" msprop:Generator_ColumnVarNameInTable="columnWHBI_Date" msprop:Generator_ColumnPropNameInTable="WHBI_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="WHBI_Owner" msprop:Generator_UserColumnName="WHBI_Owner" msprop:Generator_ColumnPropNameInRow="WHBI_Owner" msprop:Generator_ColumnVarNameInTable="columnWHBI_Owner" msprop:Generator_ColumnPropNameInTable="WHBI_OwnerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBI_Bak" msprop:Generator_UserColumnName="WHBI_Bak" msprop:Generator_ColumnPropNameInRow="WHBI_Bak" msprop:Generator_ColumnVarNameInTable="columnWHBI_Bak" msprop:Generator_ColumnPropNameInTable="WHBI_BakColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBM_WName" msprop:Generator_UserColumnName="WHBM_WName" msprop:Generator_ColumnPropNameInRow="WHBM_WName" msprop:Generator_ColumnVarNameInTable="columnWHBM_WName" msprop:Generator_ColumnPropNameInTable="WHBM_WNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBM_WCode" msprop:Generator_UserColumnName="WHBM_WCode" msprop:Generator_ColumnPropNameInRow="WHBM_WCode" msprop:Generator_ColumnVarNameInTable="columnWHBM_WCode" msprop:Generator_ColumnPropNameInTable="WHBM_WCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBM_Company" msprop:Generator_UserColumnName="WHBM_Company" msprop:Generator_ColumnPropNameInRow="WHBM_Company" msprop:Generator_ColumnVarNameInTable="columnWHBM_Company" msprop:Generator_ColumnPropNameInTable="WHBM_CompanyColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHBM_CompanyCode" msprop:Generator_UserColumnName="WHBM_CompanyCode" msprop:Generator_ColumnPropNameInRow="WHBM_CompanyCode" msprop:Generator_ColumnVarNameInTable="columnWHBM_CompanyCode" msprop:Generator_ColumnPropNameInTable="WHBM_CompanyCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

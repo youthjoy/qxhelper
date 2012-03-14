@@ -1,0 +1,3 @@
+﻿namespace QX.UI.Data
+{
+}

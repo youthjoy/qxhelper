@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StockCheckDB" targetNamespace="http://tempuri.org/StockCheckDB.xsd" xmlns:mstns="http://tempuri.org/StockCheckDB.xsd" xmlns="http://tempuri.org/StockCheckDB.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LAFA20101112ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LAFA20101112ConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LAFA20101112ConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VRpt_StockCheckTableAdapter" GeneratorDataComponentClassName="VRpt_StockCheckTableAdapter" Name="VRpt_StockCheck" UserDataComponentName="VRpt_StockCheckTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LAFA20101112ConnectionString (Web.config)" DbObjectName="LAFA20101112.dbo.VRpt_StockCheck" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT MD_MCode, MD_Name, MD_Spec, MD_Unit, Storage_WarehouseNoName, 
+      Storage_Count
+FROM VRpt_StockCheck</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MD_MCode" DataSetColumn="MD_MCode" />
+              <Mapping SourceColumn="MD_Name" DataSetColumn="MD_Name" />
+              <Mapping SourceColumn="MD_Spec" DataSetColumn="MD_Spec" />
+              <Mapping SourceColumn="MD_Unit" DataSetColumn="MD_Unit" />
+              <Mapping SourceColumn="Storage_WarehouseNoName" DataSetColumn="Storage_WarehouseNoName" />
+              <Mapping SourceColumn="Storage_Count" DataSetColumn="Storage_Count" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StockCheckDB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="StockCheckDB" msprop:Generator_DataSetName="StockCheckDB" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VRpt_StockCheck" msprop:Generator_UserTableName="VRpt_StockCheck" msprop:Generator_RowDeletedName="VRpt_StockCheckRowDeleted" msprop:Generator_RowChangedName="VRpt_StockCheckRowChanged" msprop:Generator_RowClassName="VRpt_StockCheckRow" msprop:Generator_RowChangingName="VRpt_StockCheckRowChanging" msprop:Generator_RowEvArgName="VRpt_StockCheckRowChangeEvent" msprop:Generator_RowEvHandlerName="VRpt_StockCheckRowChangeEventHandler" msprop:Generator_TableClassName="VRpt_StockCheckDataTable" msprop:Generator_TableVarName="tableVRpt_StockCheck" msprop:Generator_RowDeletingName="VRpt_StockCheckRowDeleting" msprop:Generator_TablePropName="VRpt_StockCheck">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MD_MCode" msprop:Generator_UserColumnName="MD_MCode" msprop:Generator_ColumnPropNameInRow="MD_MCode" msprop:Generator_ColumnVarNameInTable="columnMD_MCode" msprop:Generator_ColumnPropNameInTable="MD_MCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MD_Name" msprop:Generator_UserColumnName="MD_Name" msprop:Generator_ColumnPropNameInRow="MD_Name" msprop:Generator_ColumnVarNameInTable="columnMD_Name" msprop:Generator_ColumnPropNameInTable="MD_NameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MD_Spec" msprop:Generator_UserColumnName="MD_Spec" msprop:Generator_ColumnPropNameInRow="MD_Spec" msprop:Generator_ColumnVarNameInTable="columnMD_Spec" msprop:Generator_ColumnPropNameInTable="MD_SpecColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MD_Unit" msprop:Generator_UserColumnName="MD_Unit" msprop:Generator_ColumnPropNameInRow="MD_Unit" msprop:Generator_ColumnVarNameInTable="columnMD_Unit" msprop:Generator_ColumnPropNameInTable="MD_UnitColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Storage_WarehouseNoName" msprop:Generator_UserColumnName="Storage_WarehouseNoName" msprop:Generator_ColumnPropNameInRow="Storage_WarehouseNoName" msprop:Generator_ColumnVarNameInTable="columnStorage_WarehouseNoName" msprop:Generator_ColumnPropNameInTable="Storage_WarehouseNoNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Storage_Count" msprop:Generator_UserColumnName="Storage_Count" msprop:Generator_ColumnPropNameInRow="Storage_Count" msprop:Generator_ColumnVarNameInTable="columnStorage_Count" msprop:Generator_ColumnPropNameInTable="Storage_CountColumn" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

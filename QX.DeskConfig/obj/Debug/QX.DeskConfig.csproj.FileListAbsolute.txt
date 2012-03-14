@@ -1,0 +1,9 @@
+F:\code\Helper\QX.DeskConfig\obj\Debug\ResolveAssemblyReference.cache
+F:\code\Helper\QX.DeskConfig\bin\Debug\QX.DeskConfig.dll
+F:\code\Helper\QX.DeskConfig\bin\Debug\QX.DeskConfig.pdb
+F:\code\Helper\QX.DeskConfig\bin\Debug\Newtonsoft.Json.dll
+F:\code\Helper\QX.DeskConfig\bin\Debug\QX.Config.dll
+F:\code\Helper\QX.DeskConfig\bin\Debug\QX.DataAcess.dll
+F:\code\Helper\QX.DeskConfig\bin\Debug\QX.Config.pdb
+F:\code\Helper\QX.DeskConfig\obj\Debug\QX.DeskConfig.dll
+F:\code\Helper\QX.DeskConfig\obj\Debug\QX.DeskConfig.pdb

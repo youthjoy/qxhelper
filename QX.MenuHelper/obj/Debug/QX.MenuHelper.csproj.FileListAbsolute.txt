@@ -1,0 +1,9 @@
+F:\code\Helper\QX.MenuHelper\obj\Debug\ResolveAssemblyReference.cache
+F:\code\Helper\QX.MenuHelper\bin\Debug\QX.MenuHelper.dll
+F:\code\Helper\QX.MenuHelper\bin\Debug\QX.MenuHelper.pdb
+F:\code\Helper\QX.MenuHelper\obj\Debug\QX.MenuHelper.dll
+F:\code\Helper\QX.MenuHelper\obj\Debug\QX.MenuHelper.pdb
+F:\code\Helper\QX.MenuHelper\bin\Debug\Newtonsoft.Json.dll
+F:\code\Helper\QX.MenuHelper\bin\Debug\QX.Config.dll
+F:\code\Helper\QX.MenuHelper\bin\Debug\QX.DataAcess.dll
+F:\code\Helper\QX.MenuHelper\bin\Debug\QX.Config.pdb
